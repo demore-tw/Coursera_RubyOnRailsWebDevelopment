@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  /* padding required for navbar-fixed-top */
+  /* padding-top: 70px; */
+}
+
+.content-section {
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+.content-section h2 {
+  padding: 20px;
+  margin: 0;
+  background-color: #cccccc;
+}
+.content-section p {
+  padding: 0 20px 20px 20px;
+  margin: 0;
+  background-color: #cccccc;
+  height: 1000px;
+}
+
+.back-to-top {
+  text-align: right;
+}
+
+/* bootstrap md = desktop */
+@media (min-width: 992px) {
+}
+
+/* bootstrap sm = tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* bootstrap xs = mobile */
+@media (max-width: 767px) {
+}

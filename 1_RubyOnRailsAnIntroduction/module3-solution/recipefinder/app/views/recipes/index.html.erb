@@ -1,0 +1,16 @@
+<h1>Search for - <%= @search_term %></h1>
+
+<table>
+  <tr class="table-header">
+    <td>Thumbnail</td>
+    <td>Title</td>
+    <td>Social Rank</td>
+  </tr>
+  <% @recipes.each do |recipe| %>
+  <tr>
+    <td><%= link_to image_tag(recipe["image_url"]),recipe["f2f_url"] %></td>
+    <td><%= link_to sanitize(recipe["title"]),recipe["f2f_url"] %></td>
+    <td><%= recipe["social_rank"] %></td>
+  </tr>
+  <% end %>
+</table>
